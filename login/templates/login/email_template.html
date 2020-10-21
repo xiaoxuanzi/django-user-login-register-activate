@@ -1,0 +1,4 @@
+Hi {{ user.username }},
+Please click on the link to confirm your registration,
+<a href="http://{{ domain }}{% url 'login:activate' %}?uidb64={{ uid }}&token={{ token }}">Link</a>
+http://{{ domain }}{% url 'login:activate' %}?uidb64={{ uid }}&token={{ token }}
